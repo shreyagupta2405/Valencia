@@ -1,0 +1,550 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+
+
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px 10px;
+background-color: black;
+color:white;
+}
+/* .logo{
+  background-color: black;
+} */
+.logo {
+  background-color: black;
+  cursor:pointer;
+  font-size:50px;
+font-family: 'Old Standard TT', serif;
+}
+
+.nav_links{
+  list-style: none;
+  background-color: black;
+}
+
+.nav_links li{
+
+  display:inline-block;
+  padding: 0 10px;
+background-color: black;
+}
+.nav_links li a{
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+background-color: black;
+font-family: 'Montserrat', sans-serif;
+
+color:white;
+}
+.nav_links li a:hover{
+  color:#BEA66D;
+
+}
+.nav_button button{
+  font-size: 15px;
+  padding:15px 25px;
+  background-color: #2A2416;
+  color:white;
+  cursor: pointer;
+font-family: 'Montserrat', sans-serif;
+  border: 2px solid #BEA66D;
+  transition: background-color 0.5s ease;
+}
+.nav_button button:hover{
+background-color:#BEA66D;
+}
+
+/* SHREYA */
+
+.insta{
+
+  padding-top: 600px;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 30px;
+  color: #BEA66D;
+  font-family: 'EB Garamond', serif;
+
+}
+.check{
+  color: #BEA66D;
+  font-size: 150%;
+}
+.insta-img{
+
+-webkit-filter: brightness(100%);
+
+}
+.insta-img:hover {
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.gallery{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+.date {
+  padding-left: 10px;
+
+  color: #BEA66D;
+
+}
+.outside-box{
+
+}
+.form{
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.container{
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  color: #BEA66D;
+  border-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-style: solid;
+  color: #BEA66D;
+  margin: 0;
+
+  border-width: 7px;
+}
+/* hr-shreya */
+.news{
+    overflow: visible; /* For IE */
+    padding: 0px;
+    border: none;
+    border-top: 1px double #BEA66D;
+    color:#BEA66D;
+    text-align: center;
+        background-color:transparent;
+        width: 100%;
+}
+.news:after {
+  text-align: center;
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 2em;
+    padding: o 0.25em;
+    background-color: transparent;
+}
+.form{
+  background-color: black;
+}
+
+.row{
+  padding: 50px;
+  text-align: center;
+}
+.column-c {
+  width: 27%;
+  text-align: center;
+  font-size: 15px;
+  padding:40px;
+  float: left;
+
+}
+.upper{
+  text-align: center;
+  color: #BEA66D;
+  font-size: 25px;
+  font-family: 'Playfair Display', serif;
+}
+.mid{
+  text-align: center;
+  font-size: 20px;
+}
+.last{
+  text-align: center;
+}
+/* .row:after {
+  text-align: center;
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* Slideshow container */
+/* .imge{
+  height: 700px;
+} */
+/* footer */
+.footer{
+  margin: 0px;
+  text-align: center;
+  padding: 60px;
+  background-color: black;
+  color: white;
+}
+/* icons */
+.icn {
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
+.slideshow-container {
+  /* max-width: 1000px; */
+  width: 100%;
+  height: 650px;
+  position: relative;
+  /* margin: auto; */
+}
+/* fonts */
+.slide{
+  font-family: 'Playfair Display', serif;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* lightbox */
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column-c {
+  float: left;
+  width: 33.33%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* MAHIMA */
+/*   OUR-STORY SECTION */
+.our-story{
+    overflow: hidden;
+}
+.our-story-divs1{
+  float:left;
+  width:50%;
+}
+.our-story-divs1 img{
+  width:100%;
+}
+.our-story-divs2{
+  float:left;
+  width:50%;
+
+}
+.our-story-title{
+  font-family: 'Playfair Display', serif;
+padding:100px 0 20px 0;
+   text-align: center;
+font-size:50px;
+
+}
+.our-story-divs2 p{
+padding:5% 13%;
+  font-family: 'Playfair Display', serif;
+  font-size:20px;
+}
+
+/* Menu Child */
+.menu{
+  padding-bottom: 50px;
+}
+.menu-child{
+  float:left;
+  width:33%;
+
+}
+
+
+
+.breakfast{
+  position: relative;
+text-align: center;
+color: white;
+}
+.meal-img{
+
+-webkit-filter: brightness(60%);
+   max-width: 100%;
+        max-height: 100%;
+         width:100%;
+        height: 600px;
+}
+.meal-img:hover {
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.content{
+  color:white;
+  background-color: transparent;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width:300px;
+
+}
+.image-title{
+ background: rgba(204, 204, 204, 0);;
+  margin:20px;
+  font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+.mealbreak{
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: 1px double #BEA66D;
+    color:#BEA66D;
+    text-align: center;
+        background-color:transparent;
+}
+.mealbreak:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 2em;
+    padding: 0 0.25em;
+    background-color: transparent;
+}
+
+.image-description{
+ background: rgba(204, 204, 204, 0);;
+  margin:20px;
+  font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+.lunch{
+  position: relative;
+text-align: center;
+color: white;
+margin: 0 5px;
+}
+
+
+.afternoon-tea{
+position: relative;
+text-align: center;
+color: white;
+}
